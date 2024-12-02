@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Fábio Freitas | Desenvolvedor iOS",
-  description: "Portifolio de Fábio Freitas Desenvolvedor iOS",
+  description: "Portfolio de Fábio Freitas Desenvolvedor iOS",
 };
 
 export default function RootLayout({
