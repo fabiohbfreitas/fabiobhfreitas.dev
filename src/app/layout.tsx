@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fabio H. B. Fretias",
+  title: "Fábio Freitas | Desenvolvedor iOS",
   description: "Portifolio de Fábio Freitas Desenvolvedor iOS",
 };
 
