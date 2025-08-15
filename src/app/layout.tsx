@@ -1,21 +1,22 @@
+import type React from "react";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css"
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+const geist = Geist({
+  subsets: ["latin"],
   variable: "--font-geist-sans",
-  weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
   variable: "--font-geist-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: "Fábio Freitas | Desenvolvedor iOS",
-  description: "Portfolio de Fábio Freitas Desenvolvedor iOS",
+  title: "Fábio Freitas - iOS Engineer",
+  description:
+    "Building native iOS applications with Swift, SwiftUI, and UIKit. Focused on clean architecture, comprehensive testing, and performance optimization.",
 };
 
 export default function RootLayout({
@@ -24,10 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${geist.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
