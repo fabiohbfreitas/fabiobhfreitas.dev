@@ -1,7 +1,7 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
-const config: Config = {
-  darkMode: ["class"],
+const config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -88,11 +88,12 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-orange": "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
-        "gradient-orange-subtle": "linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)",
+        "gradient-orange-subtle":
+          "linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%)",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
