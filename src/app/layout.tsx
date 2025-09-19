@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fábio Freitas - iOS Engineer",
+  title: "Fábio Freitas - iOS Developer",
   description:
-    "Building native iOS applications with Swift, SwiftUI, and UIKit. Focused on clean architecture, comprehensive testing, and performance optimization.",
+    "Building native iOS applications with Swift, SwiftUI, and UIKit.",
 };
 
 export default function RootLayout({
